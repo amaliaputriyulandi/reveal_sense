@@ -553,10 +553,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            $SCRIPT_ROOT = '{{ request.script_root|tojson }}';
-        </script>
-        <script type="text/javascript" src="static/app.js"></script>
+        
 
         <!-- Start Back To Top -->
         <!-- <a id="back-to-top"><i class="icon ion-chevron-up"></i></a> -->
@@ -578,8 +575,12 @@
     <script type="text/javascript" src="js/plugins/gmap3.min.js"></script>
     <script type="text/javascript" src="js/plugins/wow.min.js"></script>
     <script type="text/javascript" src="js/plugins/counterup.min.js"></script>
-    <script type="text/javascript" src="js/plugins/nico-team.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script>
+        $SCRIPT_ROOT = '{{ request.script_root|tojson }}';
+    </script>
+    <script type="text/javascript" src="static/app.js"></script>
     
 
 </body>
