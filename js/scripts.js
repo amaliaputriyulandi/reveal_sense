@@ -114,6 +114,13 @@
 		navigation: false,
 		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
 	});
+	$("#owl-slider-2").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+	});
 	/* -------------------
 	Parallax Sections
 	---------------------*/
