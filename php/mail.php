@@ -19,8 +19,12 @@ $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Subject =" . $ulasan;
 $headers = "From: noreply@revealsense.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+    if(mail($to,$subject,$txt,$headers)){
+        header("Location:thankyou.html");
+    }else{
+        header("Location:thankyou.html");
+    }
 }
 //redirect
-header("Location:thankyou.html");
+
 ?>
