@@ -22,7 +22,7 @@ if($email!=NULL){
     if(mail($to,$subject,$txt,$headers)){
         header("Location:thankyou.html");
     }else{
-        header("Location:thankyou.html");
+        header("Location:gagal.html");
     }
 }
 //redirect
