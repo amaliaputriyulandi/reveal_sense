@@ -15,7 +15,7 @@ $comments = $_POST['comments'];
 // }
 $to = "revealsense.team@gmail.com";
 $subject = "Mail From website Reveal Sense";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Subject =" . $ulasan; "\r\n Message =" . $comments;
+$txt = "Name = ". $name . "\r\n  Email = " . $email . "\r\n Subject =" . $ulasan; "\r\n Message =" . $comments;
 $headers = "From: noreply@revealsense.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 if($email!=NULL){
@@ -26,5 +26,5 @@ if($email!=NULL){
     }
 }
 //redirect
-
+header("Location:thankyou.html");
 ?>
