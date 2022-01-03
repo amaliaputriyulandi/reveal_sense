@@ -114,13 +114,6 @@
 		navigation: false,
 		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
 	});
-	$("#owl-slider-2").owlCarousel({
-		autoPlay : true,
-		singleItem : true,
-		pagination: true,
-		navigation: false,
-		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
-	});
 	/* -------------------
 	Parallax Sections
 	---------------------*/
@@ -145,20 +138,20 @@
 	/* -------------------
 	Google map
 	---------------------*/
-	// $("#map").gmap3({
-	// 	marker:{
-	// 	address:"44 W 66th St, New York, NY",
-	// 	options:{ icon: "img/assets/marker.png"}},
-	// 	map:{
-	// 	options:{
-	// 	styles: [ {
-	// 	stylers: [ { "saturation":-90 }, { "lightness": 0 }, { "gamma": 0.0 }]},
-	// 	],
-	// 	zoom: 13,
-	// 	scrollwheel:false,
-	// 	draggable: true }
-	// 	}
-	// });
+	$("#map").gmap3({
+		marker:{
+		address:"44 W 66th St, New York, NY",
+		options:{ icon: "img/assets/marker.png"}},
+		map:{
+		options:{
+		styles: [ {
+		stylers: [ { "saturation":-90 }, { "lightness": 0 }, { "gamma": 0.0 }]},
+		],
+		zoom: 13,
+		scrollwheel:false,
+		draggable: true }
+		}
+	});
 
 	/* -------------------
 	Animated progress bars
@@ -205,7 +198,7 @@
 		/* -------------------
 		Back to top button popup
 		---------------------*/
-		if($(window).scrollTop() > 100){
+		if($(window).scrollTop() > 400){
 		$("#back-to-top").stop().animate({ bottom:'16px' },300,'easeInOutCubic')
 		}
 		else{

@@ -3,7 +3,7 @@
 	<head>
     	<!-- Meta Data -->
         <meta charset="utf-8">
-        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reveal Sense</title>
         <meta name="description" content="A Template by Vossen Design"/>
@@ -21,44 +21,76 @@
 	</head>
 	<body>
 
-        <!-- Start Header -->
-        <header>
-            <nav class="navbar navbar-default navbar-alt" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" rel="home" href="index.html">
-                            <img src="images/logo-first.png" alt="Vossen" class="logo-big">
-                            <img src="images/logo-sec.png" alt="Vossen" class="logo-small">
-                        </a>
-                    </div>
-    
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-    
-                    <div class="collapse navbar-collapse" id="main-nav">
-                        <ul class="nav navbar-nav  navbar-right">
-    
-                            <li><a href="index.html">Beranda</a></li>
-                            <li><a href="index.html#about">Tentang</a></li>
-                            <li><a href="index.html#team">Tim Kami</a></li>
-                            <li><a href="film.html">Film</a></li>
-                            <li><a href="blog-classic.html">Blog</a></li>
-                            <li><a href="blog-tempat.html">Tempat</a></li>
-                            <li><a href="blog-musik.html">Musik</a></li>
-                            <li><a href="feedback.html">Feedback</a></li>
-    
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container -->
-            </nav>
-        </header>
-        <!-- End Header -->
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar navbar-default navbar-alt" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" rel="home" href="index.html">
+                        <img src="./images/logo-first.png" alt="Vossen" class="logo-big">
+                        <img src="./images/logo-sec.png" alt="Vossen" class="logo-small">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="nav navbar-nav  navbar-right">
+
+                        <li><a href="index.html">Beranda </a></li>
+                        <li><a href="blog-classic.html">Artikel</a></li>
+                        <li class="dropdown">
+                            <span class="dropdown-toggle" data-toggle="dropdown">Hiburan <b class="caret"></b></span>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="film.html" style="font-size: 14px;">Film</a></li>
+                                <li><a href="blog-tempat.html" style="font-size: 14px;">Tempat</a></li>
+                                <li><a href="blog-musik.html" style="font-size: 14px;">Musik</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Feedback</a></li>
+
+                        <!-- <li class="dropdown">
+                            <span class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></span>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="active"><a href="#">Home - Parallax</a></li>
+                                <li><a href="home-video.html">Home - Video Slider</a></li>
+                                <li><a href="home-fullwidth.html">Home - Fullwidth</a></li>
+                                <li><a href="home-landing-page.html">Home - Landing Page</a></li>
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+                                <li><a href="http://themeforest.net/user/VossenDesign/portfolio" id="btn-buy"><span
+                                            class="btn-buy">Buy Now</span></a></li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li class="dropdown">
+                            <span class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></span>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blog-fullwidth.html">Blog Fullwidth</a></li>
+                                <li><a href="blog-columns.html">Blog Columns</a></li>
+                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                                <li><a href="blog-clean.html">Blog Clean</a></li>
+                                <li><a href="blog-single-post-1.html">Single Post Image</a></li>
+                                <li><a href="blog-single-post-2.html">Single Post Video</a></li>
+                                <li><a href="blog-single-post-3.html">Single Post Slider</a></li>
+                            </ul>
+                        </li> -->
+
+                        <!-- <li class="to-section"><a href="#contact">Contact</a></li> -->
+                        <!-- <li><a class="social-icon" href="#"><i class="icon icon-social-twitter"></i></a></li>
+                        <li><a class="social-icon" href="#"><i class="icon icon-social-facebook"></i></a></li>
+                        <li><a class="social-icon" href="#"><i class="icon icon-support"></i></a></li> -->
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>
+    </header>
+    <!-- End Header -->
 
         <!-- Start Home Revolution Slider Parallax Section -->
         <section id="home-revolution-slider">
@@ -67,7 +99,7 @@
                     <div class="tp-banner">
                         <ul>
                             <!-- SLIDE 1 -->
-                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-pantai.jpg" data-delay="10000"  data-saveperformance="on" data-title="Pantai">
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-pantai.jpg" data-delay="10000"  data-saveperformance="on" data-title="We Are Vossen">
                                 <img src="img/blog/tempat-pantai.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- Home Heading -->
@@ -104,7 +136,7 @@
                             </li>
 
                             <!-- SLIDE 2 -->
-                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-gunung.jpg" data-delay="10000"  data-saveperformance="on" data-title="Gunung">
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-gunung.jpg" data-delay="10000"  data-saveperformance="on" data-title="Digital Agency">
                                 <img src="img/blog/tempat-gunung.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- Home Heading -->
@@ -141,8 +173,8 @@
                             </li>
 
                             <!-- SLIDE 3 -->
-                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-mall-5.jpg" data-delay="10000"  data-saveperformance="on" data-title="Mall">
-                                <img src="img/blog/tempat-mall-5.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/blog/tempat-mall.jpg" data-delay="10000"  data-saveperformance="on" data-title="Creative Coders">
+                                <img src="img/blog/tempat-mall.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                                     <!-- Home Heading -->
                                     <div class="tp-caption sft"
@@ -208,7 +240,8 @@
                                 <!-- line-height: 1.8; -->
                             </div>
                             <div class="col-md-6 shortcode-title wow fadeIn">
-                                <a href="shortcodes.html"><img class="img-responsive blog-img" src="img/blog/tempat-pantai.jpg" alt=""></a>
+                                
+                            </div>
                             </div>
                             <div class="col-md-6 shortcode-title wow fadeIn">
                                 <div class="paraf">
@@ -237,47 +270,37 @@
                             </div>
 
                             <div class="col-md-6 shortcode-title wow fadeIn">
-                                <div id="owl-slider-2" class="owl-carousel">
+                                <div id="owl-slider" class="owl-carousel">
                                     <div>
-                                        <a href="https://goo.gl/maps/RZqgB6oe3bPVPT428" target="_blank" rel="noopener noreferrer">
-                                            <img class="img-responsive" src="img/blog/tempat-gunung-bromo.jpg" alt="">
-                                            <div><h5>Gunung Bromo</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg/1200px-Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg" alt="">
+                                        <div><h5>Gunung Bromo</h5></div>
                                     </div>
                                     <div>
-                                        <a href="https://goo.gl/maps/cBc7YDX8MeGgYwAY8" target="_blank" rel="noopener noreferrer">
-                                            <img class="img-responsive" src="img/blog/tempat-Gunung-Semeru.jpg" alt="">
-                                            <div><h5>Gunung Semeru</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="https://img.okezone.com/content/2021/09/16/519/2472341/aktivitas-vulkanik-meningkat-gunung-semeru-berada-di-level-waspada-S8BWPb15y9.jpg" alt="">
+                                        <div><h5>Gunung Semeru</h5></div>
                                     </div>
                                     <div>
-                                        <a href="https://goo.gl/maps/A2msGiE2iLczZrNLA" target="_blank" rel="noopener noreferrer">
-                                            <img class="img-responsive" src="img/blog/tempat-gunung-prau.jpg" alt="">
-                                            <div><h5>Gunung Prau</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="https://getlost.id/wp-content/uploads/2020/08/prau_667082506-696x464.jpg" alt="">
+                                        <div><h5>Gunung Prau</h5></div>
                                     </div>
                                     <div>
-                                        <a href="https://goo.gl/maps/LtWksotzU8CPzXnu6" target="_blank" rel="noopener noreferrer">
-                                            <img class="img-responsive" src="img/blog/tempat-gunung-rinjani.JPG" alt="">
-                                            <div><h5>Gunung Rinjani</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/07/25/3768115887.png" alt="">
+                                        <div><h5>Gunung Rinjani</h5></div>
                                     </div>
                                     <div>
-                                        <a href="https://goo.gl/maps/G7HnumUkvxWocRta9" target="_blank" rel="noopener noreferrer">
-                                            <img class="img-responsive" src="img/blog/tempat-gunung-ijen.jpg" alt="">
-                                            <div><h5>Gunung Ijen</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="https://lh3.googleusercontent.com/proxy/DbOgUlsSAaGXPpDzt6_dTqUsQUn3J8Mo7kO0HktRkeuyBw8kjDgi-yX3tHE9gUGYOFLUXRmMx61kyy7l5ZiUtcP_JO5oA3d34sP-wX3RGrTS6aUgFMdALM3DwA" alt="">
+                                        <div><h5>Gunung Ijen</h5></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 shortcode-title wow fadeIn">
                                 <div class="paraf">
                                     <h3>Berkunjung ke gunung atau bukit sudah menjadi tempat favorit bagi sebagian orang. Suasananya yang tenang dan asri membuat hati dan pikiran menjadi nyaman untuk berlama-lama disana.</h3>
-                                    <!-- <li>Gunung Bromo, Jawa Timur</li>
+                                    <li>Gunung Bromo, Jawa Timur</li>
                                     <li>Gunung Semeru, Jawa Timur</li>
                                     <li>Gunung Prau, Jawa Tengah</li>
                                     <li>Gunung Rinjani, Lombok, Nusa Tenggara Barat</li>
-                                    <li>Gunung Ijen, Jawa Timur</li> -->
+                                    <li>Gunung Ijen, Jawa Timur</li>
                                 </div>
                             </div>
 
@@ -298,11 +321,11 @@
                             <div class="col-md-6 shortcode-title wow fadeIn">
                                 <div class="paraf">
                                     <h3>Mall tempat yang nyaman dan cocok untuk memanjakan mata yang sebelumnya jenuh karena beban yang dimiliki akhir-akhir ini Mall bisa menjadi salah satu tempat pilihan terbaik untuk healing kamu.</h3>
-                                    <li><a href="https://goo.gl/maps/41oXuFW7zEy6M6fZ7">Kota Kasablanka</a></li>
-                                    <li><a href="https://g.page/CentralParkMallJkt?share">Central Park Mall</a></li>
-                                    <li><a href="https://goo.gl/maps/yeM2N8HSYxtZbivK7">Grand Indonesia Shopping Town</a></li>
-                                    <li><a href="https://goo.gl/maps/VFGriznbAVn2Mq2a7">Tunjungan Plaza</a></li>
-                                    <li><a href="https://goo.gl/maps/TgQamMXpM8im5Xg86">Trans Studio Mall - Bandung</a></li>
+                                    <li>Mall Kota Kasablanka</li>
+                                    <li>Central Park Mall</li>
+                                    <li>Grand Indonesia Shopping Town</li>
+                                    <li>Tunjungan Plaza</li>
+                                    <li>Trans Studio Mall - Bandung</li>
                                 </div>
                             </div>
 
@@ -321,34 +344,24 @@
                             <div class="col-md-6 shortcode-title wow fadeIn">
                                 <div id="owl-slider" class="owl-carousel">
                                     <div>
-                                        <a href="https://www.traveloka.com/en-id/holiday-stays/detail?spec=31-12-2021.01-01-2022.1.HOTEL.3000020013189.Radika%20Paradise%20Villa%20%26%20Cottage.1">
-                                            <img class="img-responsive" src="img/blog/tempat-ibadah-islam.jpg" alt="">
-                                            <div><h5>Islam (Masjid)</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="img/blog/tempat-ibadah-islam.jpg" alt="">
+                                        <div><h5>Islam (Masjid)</h5></div>
                                     </div>
                                     <div>
-                                        <a href="">
-                                            <img class="img-responsive" src="img/blog/tempat-ibadah-protestan.jpg" alt="">
-                                            <div><h5>Kristen Protestan (Gereja)</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="img/blog/tempat-ibadah-protestan.jpg" alt="">
+                                        <div><h5>Kristen Protestan (Gereja)</h5></div>
                                     </div>
                                     <div>
-                                        <a href="">
-                                            <img class="img-responsive" src="img/blog/tempat-ibadah-hindu.jpg" alt="">
-                                            <div><h5>Hindu (Pura)</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="img/blog/tempat-ibadah-hindu.jpg" alt="">
+                                        <div><h5>Hindu (Pura)</h5></div>
                                     </div>
                                     <div>
-                                        <a href="">
-                                            <img class="img-responsive" src="img/blog/tempat-ibadah-buddha.jpg" alt="">
-                                            <div><h5>Agama Buddha (Vihara/Wihara)</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="img/blog/tempat-ibadah-buddha.jpg" alt="">
+                                        <div><h5>Agama Buddha (Vihara/Wihara)</h5></div>
                                     </div>
                                     <div>
-                                        <a href="">
-                                            <img class="img-responsive" src="img/blog/tempat-ibadah-konghucu.jpg" alt="">
-                                            <div><h5>Konghucu (Kelenteng/Litang)</h5></div>
-                                        </a>
+                                        <img class="img-responsive" src="img/blog/tempat-ibadah-konghucu.jpg" alt="">
+                                        <div><h5>Konghucu (Kelenteng/Litang)</h5></div>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +411,7 @@
                                 <p class="subheading"></p>
                             </div>
                             <div class="col-md-6 shortcode-title wow fadeIn">
-                                <a href="https://www.olx.co.id/properti_c88"><img class="img-responsive blog-img" src="img/blog/tempat-rumah.jpg" alt=""></a>
+                                <a href="shortcodes.html"><img class="img-responsive blog-img" src="img/blog/tempat-rumah.jpg" alt=""></a>
                             </div>
                             <div class="col-md-6 shortcode-title wow fadeIn">
                                 <div class="paraf">
@@ -624,11 +637,11 @@
         <script src="js/plugins/easign1.3.min.js"></script>
         <script src="js/plugins/cubeportfolio.min.js"></script>
         <script src="js/plugins/owlcarousel.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <script src="js/plugins/gmap3.min.js"></script>
         <script src="js/plugins/wow.min.js"></script>
         <script src="js/plugins/counterup.min.js"></script>
-		<script src="js/scripts.js"></script>
+		<script src="js/scripts.js?v=2"></script>
 
 	</body>
 </html>
