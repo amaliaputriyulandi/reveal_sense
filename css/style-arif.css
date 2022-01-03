@@ -40,11 +40,19 @@ Table of Contents:
 
 /*----- Fonts -----*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
 /*----- General ----*/
+
+.rev-logo {
+  color: #fff;
+}
+
+ion-icon {
+  color: rgb(84, 176, 219);
+}
 
 .overlay {
   position: absolute;
@@ -68,7 +76,7 @@ Table of Contents:
 
 #banner {
   background: linear-gradient(rgb(15, 141, 190), rgb(116, 203, 238));
-  height: 100vh;
+  height: 700px;
 }
 
 .banner-text {
@@ -78,7 +86,7 @@ Table of Contents:
 }
 
 .banner-text h1 {
-  font-size: 45px;
+  font-size: 40px;
   line-height: 1.3;
 }
 
@@ -854,7 +862,7 @@ nav {
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-@media (min-width: 1360px and max-width: 1920px) {
+@media (min-width: 1360px) and (max-width: 1920px) {
   nav {
     max-width: 1903px;
   }
@@ -1215,10 +1223,10 @@ nav {
     left: 0;
   }
   .dropdown-menu {
-    background-color: #1c1c1c;
+    background-color: #117faa;
     border: 0;
     border-radius: 0;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.137);
     margin: 0;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -1243,7 +1251,7 @@ nav {
   .dropdown-menu > .active > a:hover,
   .dropdown-menu > .active > a:focus {
     text-decoration: none;
-    background-color: #333;
+    background-color: rgb(253, 253, 253);
   }
   .dropdown-menu {
     margin-top: 20px;
@@ -1410,6 +1418,7 @@ nav {
 .feature-description {
   line-height: 23px;
   padding-right: 10px;
+  text-align: justify;
 }
 .ion-2-5x {
   font-size: 2.5em;
@@ -1422,6 +1431,7 @@ nav {
 #about {
   padding-top: 60px;
   padding-bottom: 60px;
+  background: #008cba;
 }
 .about-text {
   margin-top: 20px;
@@ -2433,7 +2443,6 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   width: 100%;
-  /* max-width: ; */
   padding: 12.9px;
   color: #1c1c1c;
   background: #f2f2f2;
@@ -2469,7 +2478,6 @@ textarea {
   background: #f2f2f2;
   border: 1px solid #f0f0f0;
   margin-top: 7px;
-  /* margin-left: ; */
   margin-right: 15px;
   -webkit-border-radius: 2px;
 }
@@ -2697,86 +2705,30 @@ acronym {
 }
 
 /*----- Footer 1 -----*/
-.logo-footer {
-  margin-bottom: 15px;
-}
 
-.logo-foot {
-  color: #ffffff;
-}
-
-.footer-widgets {
-  background-color: rgb(15, 141, 190);
-  color: #7e7e7e;
-  padding: 55px 0px 0 0;
-  margin-bottom: 0px;
-}
-.col-footer {
-  margin-bottom: 55px;
-  max-height: 160px;
-}
-@media (max-width: 768px) {
-  .col-twitter {
-    margin-bottom: 55px;
-    max-height: 160px;
-  }
-}
-footer h4 {
-  font-size: 16px;
-  color: #ddd;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-footer p {
-  font-size: 13px;
-  color: #ffffff;
-}
-.tweet ul {
-  list-style: none;
-  padding-left: 0;
-}
-.tweet ul li {
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-weight: 400;
-  color: #a0a0a0;
-}
-.tweet ul li .date {
-  color: #ccc;
-}
-footer .contact-details {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.contact-details .icon {
-  font-size: 1.2em;
-  margin-right: 8px;
-}
 .footer-copyright {
-  background-color: #2382db;
+  background-color: #23a1db;
+  padding-top: 22px;
+  padding-bottom: 20px;
 }
 .footer-copyright p {
   margin: 0;
   line-height: 26px;
   color: #ffffff;
+  text-align: center;
 }
 footer #social-icons {
   list-style: none;
   float: right;
   margin: 0;
 }
-@media (max-width: 992px) {
-  .footer-copyright p {
-    text-align: center;
-  }
-  footer #social-icons {
-    float: none !important;
-    text-align: center;
-    padding-left: 0px;
-    padding-top: 10px;
-  }
+footer #social-icons {
+  float: none !important;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 10px;
 }
+
 footer #social-icons li {
   font-size: 20px;
   display: inline-block;
@@ -3773,7 +3725,6 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   width: 100%;
-  /* max-width: ; */
   padding: 12.9px;
   color: #1c1c1c;
   background: #f2f2f2;
@@ -4160,8 +4111,7 @@ textarea {
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
 }
-.background-image img {
-}
+
 img {
   max-width: 100%;
 }
@@ -4237,4 +4187,19 @@ img {
 }
 #slider-nav-up .owl-next {
   right: auto;
+}
+
+#rev_chat {
+  position: fixed;
+  /* color: #fff; */
+  z-index: 100;
+  line-height: 26px;
+  bottom: 3%;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  border-radius: 2px;
+  height: 100px;
+  width: 100px;
+  display: block;
 }

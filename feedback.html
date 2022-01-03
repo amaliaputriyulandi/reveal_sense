@@ -216,17 +216,19 @@
                         <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
                             <div id="message"></div>
                             <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
-                            <form method="post" action="php/mail.php" name="contactform" id="contactform">
+                            <form action="https://formsubmit.co/revealsense.team@gmail.com" method="POST" name="contactform" id="contactform">
                                 <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Nama" autocomplete="off"/>
-                                        <input name="email" type="text" id="email" placeholder="Email" autocomplete="off"/>
-                                        <input name="ulasan" type="text" id="ulasan" placeholder="Ulasan" autocomplete="off"/>
+                                        <input name="name" type="text" id="name" placeholder="Nama" autocomplete="off" required/>
+                                        <input name="email" type="text" id="email" placeholder="Email" autocomplete="off" required/>
+                                        <input name="ulasan" type="text" id="ulasan" placeholder="Ulasan" autocomplete="off" required/>
+                                        <input type="hidden" name="_next" value="https://reveal-sense.herokuapp.com/thanyou.html">
                                         <!-- <input name="verify" type="hidden" id="verify" value="true"/> -->
                                 </fieldset>
                                 <fieldset>
-                                        <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Feedback" autocomplete="off"></textarea>
+                                        <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Feedback" autocomplete="off" required></textarea>
                                 </fieldset>
                                 <input type="submit" class="submit" id="submit" value="Kirim" />
+                                <!-- <button type="submit" class="submit" id="submit"></button> -->
                             </form>
                         </div>
 
