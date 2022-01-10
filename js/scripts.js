@@ -121,6 +121,34 @@
 		navigation: false,
 		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
 	});
+	$("#owl-slider-3").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+	});
+	$("#owl-slider-4").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+	});
+	$("#owl-slider-5").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+	});
+	$("#owl-slider-6").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+		navigationText : ['<i class="icon ion-chevron-left"></i>','<i class="icon ion-chevron-right"></i>'],
+	});
 	/* -------------------
 	Parallax Sections
 	---------------------*/
