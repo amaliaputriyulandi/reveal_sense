@@ -2,7 +2,7 @@
 class Chatbox {
     constructor() {
         this.args = {
-            openButton: document.querySelectorAll('.chatbox__button , .chatboxOpen__buttons'),
+            openButton: document.querySelectorAll('.chatbox__button , .chatboxOpen__buttons, .chatboxOpen2__buttons'),
             chatBox: document.querySelector('.chatbox__support'),
             sendButton: document.querySelector('.send__button')
         }
@@ -13,9 +13,10 @@ class Chatbox {
 
     display() {
         const {openButton, chatBox, sendButton} = this.args;
-        
+        console.log("ini buat open", openButton)
         openButton[0].addEventListener('click', () => this.toggleState(chatBox))
         openButton[1].addEventListener('click', () => this.toggleState(chatBox))
+        openButton[2].addEventListener('click', () => this.toggleState(chatBox))
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
 

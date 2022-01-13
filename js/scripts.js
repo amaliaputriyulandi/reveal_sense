@@ -233,7 +233,7 @@
 		/* -------------------
 		Back to top button popup
 		---------------------*/
-		if($(window).scrollTop() > 100){
+		if($(window).scrollTop() > 300){
 		$("#back-to-top").stop().animate({ bottom:'16px' },300,'easeInOutCubic')
 		}
 		else{
