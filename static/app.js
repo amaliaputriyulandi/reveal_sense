@@ -16,7 +16,6 @@ class Chatbox {
         console.log("ini buat open", openButton)
         openButton[0].addEventListener('click', () => this.toggleState(chatBox))
         openButton[1].addEventListener('click', () => this.toggleState(chatBox))
-        openButton[2].addEventListener('click', () => this.toggleState(chatBox))
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
 
