@@ -16,7 +16,6 @@ class Chatbox {
         console.log("ini buat open", openButton)
         openButton[0].addEventListener('click', () => this.toggleState(chatBox))
         openButton[1].addEventListener('click', () => this.toggleState(chatBox))
-        openButton[2].addEventListener('click', () => this.toggleState(chatBox))
 
         sendButton.addEventListener('click', () => this.onSendButton(chatBox))
 
@@ -42,6 +41,7 @@ class Chatbox {
     onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');
         let text1 = textField.value
+        console.log("🧐 ~ file: app.js ~ line 45 ~ Chatbox ~ onSendButton ~ text1", text1)
         if (text1 === "") {
             return;
         }
