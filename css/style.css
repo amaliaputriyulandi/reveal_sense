@@ -3512,7 +3512,7 @@ ul.caret-list li:before {
 .blog-post-info li {
   display: inline-block;
   font-size: 13px;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .blog-post-info li a {
   color: #104d9c;
