@@ -66,6 +66,9 @@ function addMotivasi(e) {
             })
             .then((res) => res.json())
             .then((data) => console.log(data))
+            .then(() => {
+                window.location.reload();
+            })
         }
         
 }
