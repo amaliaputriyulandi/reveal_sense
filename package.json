@@ -1,0 +1,30 @@
+{
+  "name": "Mental",
+  "version": "1.0.0",
+  "description": "Website Reveal Sense",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaliaputriyulandi/reveal_sense.git"
+  },
+  "keywords": [],
+  "author": "RevealSenseTeam",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "socket.io": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "bugs": {
+    "url": "https://github.com/amaliaputriyulandi/reveal_sense/issues"
+  },
+  "homepage": "https://github.com/amaliaputriyulandi/reveal_sense#readme"
+}

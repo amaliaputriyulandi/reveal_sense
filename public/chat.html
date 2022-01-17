@@ -17,7 +17,7 @@
   <div class="chat-container">
     <header class="chat-header">
       <h1>Ruang Curhat</h1>
-      <a href="masuk.html" class="btn">Keluar</a>
+      <a id="leave-btn" class="btn">Keluar</a>
     </header>
     <main class="chat-main">
       <div class="chat-sidebar">
@@ -29,12 +29,6 @@
         </ul>
       </div>
       <div class="chat-messages">
-        <div class="message">
-          <p class="meta">Ruang Curhat <span>9:12pm</span></p>
-          <p class="text">
-            Selamat Datang
-          </p>
-        </div>
       </div>
     </main>
     <div class="chat-form-container">
@@ -46,6 +40,12 @@
     </div>
   </div>
 
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+  ></script>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="js/main.js"></script>
 </body>
 
