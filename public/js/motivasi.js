@@ -56,7 +56,7 @@ function addMotivasi(e) {
         if(title == ""){
             console.log("tidak bisa")
         }else{
-            fetch('https://api-chatbot-rs.herokuapp.com/add', {
+            fetch('https://api-chatbot-rs.herokuapp.com/todo/add', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
