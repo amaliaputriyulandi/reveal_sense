@@ -11,7 +11,7 @@ fetch('https://api-chatbot-rs.herokuapp.com/get')
             response.json().then(function(data){
                 const allMotivasi = data.todo
                 
-                allMotivasi.slice(1).slice(-12).reverse().forEach(motivasi => {
+                allMotivasi.slice(1).slice(-14).reverse().forEach(motivasi => {
                   addItem(motivasi.title, motivasi.id)
                 })
                 
@@ -48,46 +48,17 @@ function addMotivasi(e) {
 }
 
 
-addItem = (input, id) => {
+addItem = (input) => {
   const item = document.createElement("div");
   const text = document.createElement("p");
-  const div = document.createElement("div");
-  const checkIcon = document.createElement("i");
-  const trashIcon = document.createElement("i");
 
   item.className = "item";
   text.textContent = input;
-  item.id = `${id}`
-
-  checkIcon.className = "fas fa-check-square";
-  checkIcon.style.color = "lightgray";
-  checkIcon.addEventListener("click", () => {
-    checkIcon.style.color = "limegreen";
-  })
-  div.appendChild(checkIcon);
-
-  trashIcon.className = "fas fa-trash";
-  trashIcon.style.color = "darkgray";
-  trashIcon.addEventListener("click", () => {
-    fetch(`https://api-chatbot-rs.herokuapp.com/todo/delete/${item.id}`, {
-              method: 'DELETE',
-              headers: {
-                  'Accept': 'application/json, text/plain, */*',
-                  'Content-type':'application/json'
-              },
-          })
-          .then((res) => res.json())
-          .then((data) => console.log(data))
-          .then(() => {
-              window.location.reload();
-          })
-  })
-  div.appendChild(trashIcon);
 
   
+  
   item.appendChild(text);
-  item.appendChild(div);
-
+  
   document.querySelector("#to_do_list").appendChild(item);
   document.querySelector("#input").value = "";
 }
