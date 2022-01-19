@@ -1,8 +1,9 @@
-document.getElementById('addKataMotivasi').addEventListener('click', addMotivasi)
+// document.querySelector("#input").addEventListener("keydown", (event) => {
+//   if(event.key === "Enter")
+//     addMotivasi
+// });
 
-
-let title2 = document.getElementById('title').Value; 
-console.log("ini dia:", title2)
+document.getElementById('add_item').addEventListener('click',  addMotivasi)
 
 fetch('https://api-chatbot-rs.herokuapp.com/get')
     .then(
@@ -14,61 +15,64 @@ fetch('https://api-chatbot-rs.herokuapp.com/get')
 
             response.json().then(function(data){
                 const allMotivasi = data.todo
-                allMotivasi.forEach(motivasi => {
-                    document.getElementById('motivasiList')
-                        .insertAdjacentHTML('beforeend', `<p class="ui big header"> ${motivasi.id} | ${motivasi.title}</p>`)
-                });
+                console.log("🧐 ~ file: script.js ~ line 19 ~ response.json ~ allMotivasi", allMotivasi)
+                const aaaa = allMotivasi.slice(1).slice(-12).reverse()
+                console.log("🧐 ~ file: script.js ~ line 21 ~ response.json ~ aaaa", aaaa)
+                
+                allMotivasi.slice(1).slice(-12).reverse().forEach(motivasi => {
+                  addItem(motivasi.title, motivasi.id)
+                })
+                
+                
             })
         }
     ).catch(function (err){
         console.log(err)
     })
-
-// function getAll() {
-//     fetch('https://api-chatbot-rs.herokuapp.com/get')
-//     .then(
-//         function(response) {
-//             if(response.status != 200){
-//                 console.log('Ooops...' + response.status)
-//                 return
-//             }
-
-//             response.json().then(function(data){
-//                 const allMotivasi = data.todo
-//                 allMotivasi.forEach(motivasi => {
-
-//                     // document.getElementById('motivasiList').innerHTML = `<p class="ui big header" id="${motivasi.id}"> ${motivasi.id} | ${motivasi.title}</p>`
-
-//                     document.getElementById('motivasiList')
-//                         .insertAdjacentHTML('beforeend', `<p class="ui big header" id="${motivasi.id}"> ${motivasi.id} | ${motivasi.title}</p>`)
-//                 });
-//             })
-//         }
-//     ).catch(function (err){
-//         console.log(err)
-//     })
-// }
+  
+// document.querySelector("#add_item").addEventListener("click", () => {
+//   const input = document.querySelector("#input");
+//   addItem(input.value);
+// });
 
 function addMotivasi(e) {
-    e.preventDefault();
-        let title = document.getElementById('title').value; 
-    
-        if(title == ""){
-            console.log("tidak bisa")
-        }else{
-            fetch('https://api-chatbot-rs.herokuapp.com/todo/add', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json, text/plain, */*',
-                    'Content-type':'application/json'
-                },
-                body:JSON.stringify({"title": title})
-            })
-            .then((res) => res.json())
-            .then((data) => console.log(data))
-            .then(() => {
-                window.location.reload();
-            })
-        }
-        
+  e.preventDefault();
+      let title = document.getElementById('input').value; 
+      console.log("🧐 ~ file: script.js ~ line 41 ~ addMotivasi ~ title", title)
+  
+      if(title == ""){
+          console.log("tidak bisa")
+      }else{
+          fetch('https://api-chatbot-rs.herokuapp.com/todo/add', {
+              method: 'POST',
+              headers: {
+                  'Accept': 'application/json, text/plain, */*',
+                  'Content-type':'application/json'
+              },
+              body:JSON.stringify({"title": title})
+          })
+          .then((res) => res.json())
+          .then((data) => console.log(data))
+          .then(() => {
+              window.location.reload();
+          })
+      }
+      
 }
+
+
+addItem = (input, id) => {
+  const item = document.createElement("div");
+  const text = document.createElement("p");
+
+  item.className = "item";
+  text.textContent = input;
+  item.id = `${id}`
+
+  
+  item.appendChild(text);
+
+  document.querySelector("#to_do_list").appendChild(item);
+  document.querySelector("#input").value = "";
+}
+  

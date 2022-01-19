@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
     <link rel="stylesheet" href="./css/chatcode/design.css">
+    <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile" />
     <title>Ruang Curhat</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- Fontawesome CDN Link -->
@@ -14,10 +14,39 @@
 </head>
 
 <body>
+    <section>
+        <a href="index.html"><img src="./images/logo-first.png" alt="Vossen" class="logo-big"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Beranda</a>
+            <div class="dropdown">
+                <button class="dropbtn">Hiburan
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="film.html">Film</a>
+                    <a href="blog-tempat.html">Tempat</a>
+                    <a href="blog-musik.html">Musik</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Bantuan
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="masuk.html">Ruang Curhat</a>
+                    <a href="motivasi.html">Kata Motivasi</a>
+                </div>
+            </div>
+            <a href="feedback.html">Feedback</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </section>
+
+
     <div class="container">
-        <header class="join-header">
+        <div class="join-header">
             <h1>Ruang Curhat</h1>
-        </header>
+        </div>
         <input type="checkbox" id="flip">
         <div class="cover">
             <div class="front">
@@ -35,7 +64,7 @@
                             </div>
                             <p>Pilih Room :</p>
                             <div class="custom-select">
-                                <select name="room" id="room" >
+                                <select name="room" id="room">
                                     <option value="Sedih">Sedih</option>
                                     <option value="Senang">Senang</option>
                                     <option value="Galau">Galau</option>
@@ -45,7 +74,7 @@
                                 </select>
                             </div>
                             <div class="button input-box">
-                                <input type="submit" value="Sumbit">
+                                <input type="submit" value="Masuk">
                             </div>
                         </div>
                     </form>
@@ -53,6 +82,16 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

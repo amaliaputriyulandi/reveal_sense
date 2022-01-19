@@ -2,35 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivasi</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/motiv_style.css">
+  <title>Motivasi Diri</title>
 </head>
 
 <body>
-    <div style="margin-top: 50px;" class="ui container">
-        <h1 class="ui center aligned header">Motivasi Diri Sendiri</h1>
-
-        <form class="ui form" action="/add" method="post">
-            <div class="field">
-                <label>Kata yang bikin kamu semangat</label>
-                <input type="text" name="title" placeholder="Katakan" id="title" autocomplete="off" required><br>
-            </div>
-            <a href="motivasi.html"><button class="ui blue button" type="submit" value="submit" id="addKataMotivasi">Kirim</button></a>
-        </form>
-
-        <hr>
-
-        <div class="ui segment" id="motivasiList">
+  <section>
+    <a href="index.html"><img src="../images/logo-sec.png" alt="Vossen" class="logo-big"></a>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Beranda</a>
+      <div class="dropdown">
+        <button class="dropbtn">Hiburan
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="film.html">Film</a>
+          <a href="blog-tempat.html">Tempat</a>
+          <a href="blog-musik.html">Musik</a>
         </div>
-
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Bantuan
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="masuk.html">Ruang Curhat</a>
+          <a href="motivasi.html">Kata Motivasi</a>
+        </div>
+      </div>
+      <a href="feedback.html">Feedback</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+  </section>
+  <main>
 
-    
-    <script src="js/motivasi.js"></script>
+    <header>
+      <div class="container">
+        <img src="./images/title.png" alt="" class="judul">
+
+        <div class="user_input">
+          <input type="text" id="input" placeholder="Katakan..."><button id="add_item">Kirim</button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div id="to_do_list"></div>
+      </div>
+    </section>
+  </main>
+  <section>
+    <div>
+      <img src="./images/motivasi.png" alt="" class="ilus">
+    </div>
+  </section>
+
+  <div id="ft">
+
+  </div>
+  <footer>
+    <div class="footer-copyright">
+        <p>© 2021 <a href="index.html" class="rev-logo">Reveal Sense</a> All
+        Rights
+        Reserved. </p>
+    </div>
+  </footer>
+ 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+
+  <script src="js/motivasi.js"></script>
 </body>
 
 </html>
