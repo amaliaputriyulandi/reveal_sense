@@ -25,7 +25,7 @@ Untuk melihat aplikasi kami yang telah di deploy pada server silahkan klik pada 
 2. Kemudian install package library yang digunakan dengan cara menjalankan perintah `npm install`. Maka terlihat ada penambahan folder bernama `node_modules`
 3. Jalankan aplikasi dengan cara `npm run dev` atau `node app.js`
 
-# RevelSense Team
+# RevealSense Team
 
 - Amalia Putri Yulandi (Backend)
 - Annisa (Editor)
