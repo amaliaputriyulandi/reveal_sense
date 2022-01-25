@@ -6,7 +6,9 @@
         "hi",
         "hey",
         "hallo",
+        "halo",
         "hello",
+        "helo",
         "hai",
         "permisi"
         
@@ -283,6 +285,10 @@
      {
       "tag": "terakhir",
       "patterns": [
+        "ok",
+        "oke",
+        "iya",
+        "ya",
         "terima kasih pencerahannya",
         "makasi ya,sekarang saya bisa lebih baik",
         "baik, terima kasih atas masukkannya",
